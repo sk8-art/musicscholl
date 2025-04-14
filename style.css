@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+:root {
+    --font: 'Garamond-Italic';
+    --font-bold: 'Garamond-Bold';
+    --font-reg: 'Garamond-Reg';
+    /* цвета */
+    --color-bacg: #84583D;
+}
+@font-face {
+    font-family: 'Garamond-Italic';
+    src: url(./fonts/EBGaramond-Italic.otf);
+}
+@font-face {
+    font-family: 'Garamond-Bold';
+    src: url(./fonts/EBGaramond-Bold.otf);
+}
+@font-face {
+    font-family: 'Garamond-Reg';
+    src: url(./fonts/EBGaramond-Regular.otf);
+}
+header {
+    width: 100vw;
+    height: 790px;
+    background-color: var(--color-bacg);
+    border-radius: 0 0 50px 50px;
+}  
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 35px;
+}
+.head-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.line {
+    border: 3px solid #fff;
+    width: 46px;
+    border-radius: 5px;
+}
+.line36 {
+    width: 36px;
+}
+.head-rigth {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.p-h {
+    font-size: 36px;
+    color: #fff;
+    font-family: var(--font-bold);
+}
+.toch {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.t {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.title {
+    font-size: 96px;
+    color: #fff;
+    font-weight: 100;
+    width: 810px;
+    margin-left: 75px;
+}
+.img-note {
+    width: 100vw;
+    margin-top: -130px;
+}
+
+.section1 {
+    margin-top: 45px;
+}
+
+.slider-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 400px;
+}
+
+.slide {
+    min-width: 100%;
+    height: 80vh;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+    background-color: white;
+}
+.section2 {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/note1.png);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 48px;
+}
+.section-loc {
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    gap: 80px;
+    justify-content: center;
+    color: #84583D;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    background-color: #C1B09F;
+    border-radius: 50px 50px 0 0;
+    justify-content: flex-end;
+    gap: 100px;
+}
+.group1 {
+    display: flex;
+    justify-content: space-around;
+}
+.email, .tel {
+    display: flex;
+    gap: 15px;
+}
+.email p, .tel p {
+    font-family: var(--font-bold);
+    color: #634737;
+    font-size: 24px;
+}
+.text-inf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-inf > div {
+    color: #634737;
+    font-family: var(--font-bold);
+    font-size: 20px;
+}
+.group2 > p {
+    font-size: 18px;
+    font-family: var(--font-reg);
+}
