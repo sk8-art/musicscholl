@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в систему</title>
+    <style>
+        .error { color: red; display: none; }
+        .success { color: green; display: none; }
+    </style>
+</head>
+<body>
+    <form id="loginForm" action="javascript:void(0)" method="post">
+    <h2>Вход в систему</h2>
+    
+    <div>
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" required>
+        <div id="usernameError" class="error"></div>
+    </div>
+    
+    <div>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <div id="passwordError" class="error"></div>
+    </div>
+    
+    <button type="submit">Войти</button>
+    
+    <div id="successMessage" class="success"></div>
+    <div id="generalError" class="error"></div>
+</form>
+
+    <script src="security.js"></script>
+</body>
+</html>

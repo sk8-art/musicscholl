@@ -27,3 +27,5 @@ const slider = document.querySelector('.slider');
                 updateSlider();
             });
         });
+
+
